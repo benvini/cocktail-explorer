@@ -1,0 +1,116 @@
+.form {
+  padding: 24px;
+  max-width: 800px;
+  margin: 0 auto;
+  margin-bottom: 40px;
+}
+
+.ingredientRow {
+  display: flex;
+  align-items: center;
+  margin-bottom: 16px;
+  gap: 16px;
+}
+
+.ingredientName {
+  flex: 2;
+}
+
+.ingredientMeasure {
+  flex: 1;
+}
+
+.imagePreview {
+  margin-top: 16px;
+  max-width: 200px;
+  max-height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+
+  img {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+  }
+}
+
+.deleteButton {
+  color: #f44336;
+}
+
+.addButton {
+  margin-top: 8px !important;
+  margin-bottom: 16px !important;
+}
+
+.glassTypeSelect {
+  min-width: 200px !important;
+}
+
+.saveButtonContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 24px;
+  margin-bottom: 16px;
+}
+
+.saveButton {
+  border-radius: 28px !important;
+  padding: 12px 32px !important;
+  font-size: 16px !important;
+  font-weight: 600 !important;
+  text-transform: none !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15) !important;
+  transition: all 0.3s ease !important;
+  position: relative;
+  overflow: hidden !important;
+  min-width: 200px !important;
+
+  &:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.2) !important;
+  }
+
+  &:active {
+    transform: translateY(0);
+  }
+}
+
+.buttonDisabled {
+  background-color: rgba(0, 0, 0, 0.12) !important;
+  color: rgba(0, 0, 0, 0.26) !important;
+  box-shadow: none !important;
+  pointer-events: none !important;
+
+  &:hover {
+    transform: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.flashSuccessAlert {
+  animation: flashSuccess 0.5s ease-in-out;
+}
+
+/* Add a flash animation for the success snackbar */
+@keyframes flashSuccess {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+.error {
+  color: #f44336;
+  margin-top: 4px;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0;
+}

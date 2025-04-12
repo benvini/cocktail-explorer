@@ -1,0 +1,33 @@
+.container {
+  padding: 24px;
+}
+
+.title {
+  margin-bottom: 24px !important;
+  font-weight: 600 !important;
+}
+
+.grid {
+  margin-bottom: 24px;
+}
+
+.pagination {
+  display: flex;
+  justify-content: center;
+  padding: 24px 0;
+}
+
+.loaderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 300px;
+}
+
+.messageContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+  text-align: center;
+}

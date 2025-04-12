@@ -1,0 +1,52 @@
+.appBar {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1) !important;
+}
+
+.toolbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 8px 20px;
+}
+
+.logoLink {
+  text-decoration: none;
+  color: inherit;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logoIcon {
+  margin-right: 8px;
+  color: #1976d2;
+  font-size: 28px !important;
+}
+
+.logoText {
+  font-weight: 700 !important;
+  letter-spacing: 0.5px;
+}
+
+.navItems {
+  display: flex;
+}
+
+.navButton {
+  margin-left: 16px !important;
+  font-weight: 500 !important;
+
+  &.active {
+    color: #1976d2;
+    font-weight: 700 !important;
+  }
+}
+
+.menuButton {
+  margin-left: 8px;
+}
+
+.drawerContainer {
+  width: 240px;
+}

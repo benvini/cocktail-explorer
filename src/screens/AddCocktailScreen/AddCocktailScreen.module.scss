@@ -1,0 +1,45 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.banner {
+  padding: 40px 0;
+  background: linear-gradient(to right, #11998e, #38ef7d);
+  color: #ffffff;
+  text-align: center;
+}
+
+.title {
+  font-weight: 700;
+  margin-bottom: 16px;
+}
+
+.subtitle {
+  font-weight: 300;
+  opacity: 0.9;
+}
+
+.formContainer {
+  padding: 40px 0;
+  flex: 1;
+}
+
+@media (max-width: 600px) {
+  .banner {
+    padding: 24px 0;
+  }
+
+  .title {
+    font-size: 32px !important;
+  }
+
+  .subtitle {
+    font-size: 16px !important;
+  }
+
+  .formContainer {
+    padding: 24px 0;
+  }
+}
